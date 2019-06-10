@@ -4,11 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <p>adngijandijf gulp styles</p>
-    <div>mạnn</div>
+    <header>
+        <div class="container">
+            <div class="logo"><span>alice</span>maid</div>        
+            <nav class="DeskTopNav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+                <div class="headerDot">.</div>
+                <div class="ion-bag"></div>
+                <div class="SearchDesk ion-ios-search"></div>
+            </nav>        
+        </div>
+    </header>
+    <!------------------------------------------HERO -------------------------------------->
+    <section>
+        <div class="hero">
+            <div class="infomation">
+                <div class="FindNeasest">
+                    Find our offices that nearest to you
+                </div>
+                <div class="FindDearcpt">
+                    Aenean tristique leo eros, at gravida massa semper eu. Fusce im Lorem ipsum, dolor sit amet consectetur
+                </div>
+                <div class="searchBar">
+                    <input type="text" placeholder="Enter your ZIP code here">
+                    <button>SEARCH</button>
+                </div>
+            </div>
+        </div>
+        <div class="blueBrg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 centralizeCTF">
+                        <div class="contactInfo">
+                            <div class="ion-ios-telephone-outline"></div>
+                            <div class="blueBrgInfo">
+                                <p>CALL FOR FREE SCHEDULE</p>
+                                <span>(+064)-3482-58294</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 centralizeCTF">
+                        <div class="contactInfo">
+                            <div class="ion-ios-alarm-outline"></div>
+                            <div class="blueBrgInfo">
+                                <p>WORKING TIME</p>
+                                <span>Mon - Sat: 8.00 am - 17.00 pm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 centralizeCTF">
+                        <div class="contactInfo">
+                            <div class="ion-ios-email-outline"></div>
+                            <div class="blueBrgInfo">
+                                <p>CONTACT US VIA EMAIL</p>
+                                <span>info@alicemaid.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------ SERVICE 4 Area -------------------------------------->
+    <section>
+        <div class="sectionTitle service">
+            <span>WHAT WE DO?</span>
+            <p>WE OFFER BEST SERVICES IN 4 AREAS</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="ImgOfservice SVnoOne"></div>
+                    <div class="SVtype">Carpet Cleaning</div>
+                    <div class="SVdecript">
+                        Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ImgOfservice SVno2"></div>
+                    <div class="SVtype">Move in/out Cleaning</div>
+                    <div class="SVdecript">
+                        Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ImgOfservice SVno3"></div>
+                    <div class="SVtype">House Cleaning</div>
+                    <div class="SVdecript">
+                        Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="ImgOfservice SVno4"></div>
+                    <div class="SVtype">Construction Cleaning</div>
+                    <div class="SVdecript">
+                        Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="getSchedule">
+            <span>GET FREE SCHEDULE</span> 
+        </div>
+    </section>
+    <section>
+        <div class="featureproject">
+            <div class="sectionTitle featureprojectTit">
+                <span>WHAT WE DO?</span>
+                <p>FEATURED PROJECTS</p>
+            </div>
+            <div class="tagProject">
+                <span class="active" data-filter="*">Carpet Cleaning</span>
+                <span data-filter=".housecleaning">House Cleaning</span>
+                <span data-filter=".move">Construction Cleaning</span>
+                <span data-filter=".constructing">Move in/out Cleaning</span>
+            </div>
+            <div class="container">
+                <div class="ProjectImg">
+                    <img class="constructing" src="images/Fproject1.jpg" alt="Fproject1">
+                    <img class="move" src="images/Fproject2_03.jpg" alt="Fproject2">
+                    <img class="move" src="images/Fproject3_03.jpg" alt="Fproject3">
+                    <img class="housecleaning" src="images/Fproject4_03.jpg" alt="Fproject4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------------ carousel Conment -------------------------------------->
+    <section>
+        <div class="ion-quote"></div>
+        <div class="hfbdaf">asnif</div>
+    </section>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
 </body>
 </html>

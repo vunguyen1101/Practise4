@@ -1,0 +1,16 @@
+@mixin fontface($fontfamily,$fontsize,$color,$fontweight) 
+{
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    color: $color;
+    font-weight: $fontweight;
+}
+@mixin DrawCircle($width,$color) {
+    width: $width;
+    height: $width;
+    background: $color;
+    text-align: center;
+    -moz-border-radius: $width;
+    -webkit-border-radius: $width;
+    border-radius:$width;
+}

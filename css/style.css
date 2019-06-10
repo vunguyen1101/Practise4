@@ -1,6 +1,411 @@
-p {
-  color: aqua;
-  font-size: 100px;
+@font-face {
+  font-family: montserrat-regular;
+  font-style: normal;
+  src: url("../fonts/montserrat/montserrat-v13-latin-regular.eot"), url("../fonts/montserrat/montserrat-v13-latin-regular.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v13-latin-regular.woff") format("woff"), url("../fonts/montserrat/montserrat-v13-latin-regular.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v13-latin-regular.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: montserrat-mideum;
+  font-style: normal;
+  src: url("../fonts/montserrat/montserrat-v13-latin-500.eot"), url("../fonts/montserrat/montserrat-v13-latin-500.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v13-latin-500.woff") format("woff"), url("../fonts/montserrat/montserrat-v13-latin-500.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v13-latin-500.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: montserrat-600;
+  font-style: normal;
+  src: url("../fonts/montserrat/montserrat-v13-latin-600.eot"), url("../fonts/montserrat/montserrat-v13-latin-600.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v13-latin-600.woff") format("woff"), url("../fonts/montserrat/montserrat-v13-latin-600.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v13-latin-600.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: montserrat-bold;
+  font-style: normal;
+  src: url("../fonts/montserrat/montserrat-v13-latin-800.eot"), url("../fonts/montserrat/montserrat-v13-latin-800.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v13-latin-800.woff") format("woff"), url("../fonts/montserrat/montserrat-v13-latin-800.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v13-latin-800.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: montserrat-Superbold;
+  font-style: normal;
+  src: url("../fonts/montserrat/montserrat-v13-latin-900.eot"), url("../fonts/montserrat/montserrat-v13-latin-900.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v13-latin-900.woff") format("woff"), url("../fonts/montserrat/montserrat-v13-latin-900.ttf") format("truetype"), url("../fonts/montserrat/montserrat-v13-latin-900.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Lato-regular;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-regular.eot"), url("../fonts/Lato/lato-v15-latin-regular.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-regular.woff") format("woff"), url("../fonts/Lato/lato-v15-latin-regular.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-regular.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Lato-700;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-700.eot"), url("../fonts/Lato/lato-v15-latin-700.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-700.woff2") format("woff"), url("../fonts/Lato/lato-v15-latin-700.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-700.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Lato-300;
+  font-style: normal;
+  src: url("../fonts/Lato/lato-v15-latin-300.eot"), url("../fonts/Lato/lato-v15-latin-300.woff2") format("woff2"), url("../fonts/Lato/lato-v15-latin-300.woff2") format("woff"), url("../fonts/Lato/lato-v15-latin-300.ttf") format("truetype"), url("../fonts/Lato/lato-v15-latin-300.svg") format("svg");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  font-style: normal;
+  src: url("../fonts/MyriadPro-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css");
+}
+
+/*# sourceMappingURL=fonts.css.map */
+header {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  height: 114px;
+  line-height: 114px;
+  background-color: #ffffff;
+}
+
+.logo {
+  float: left;
+  font-family: montserrat-bold;
+  font-size: 36px;
+  color: #238ee1;
+  font-weight: normal;
+}
+
+.logo span {
+  color: #46607f;
+}
+
+.DeskTopNav {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  float: right;
+  color: #36392e;
+}
+
+.ion-bag {
+  margin-right: 30px;
+  font-size: 24px;
+}
+
+.ion-ios-search {
+  font-size: 24px;
+}
+
+.DeskTopNav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.DeskTopNav ul a {
+  text-decoration: none;
+  font-family: montserrat-bold;
+  font-size: 14px;
+  color: #36392e;
+  font-weight: normal;
+}
+
+.DeskTopNav ul li {
+  margin-right: 30px;
+  display: inline-block;
+}
+
+.headerDot {
+  margin-right: 30px;
+  font-size: 30px;
+  line-height: 100px;
+  color: #50bfcf;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 900px;
+  background-image: url("../images/headerbrg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(17, 68, 82, 0.3);
+}
+
+.infomation {
+  position: absolute;
+  z-index: 1;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.FindNeasest {
+  font-family: montserrat-bold;
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.FindDearcpt {
+  margin-bottom: 50px;
+  font-family: Lato-regular;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.searchBar {
+  cursor: pointer;
+  display: inline-flex;
+  padding-left: 40px;
+  border-radius: 35px;
+  width: 770px;
+  height: 70px;
+  line-height: 70px;
+  justify-content: space-between;
+  padding: 5px 5px 5px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.searchBar input {
+  line-height: 60px;
+  width: 70%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.searchBar input::placeholder {
+  font-family: Lato-regular;
+  font-size: 18px;
+  color: #e4e6e7;
+  font-weight: normal;
+}
+
+.searchBar button {
+  line-height: 60px;
+  border: none;
+  height: 100%;
+  border-radius: 30px;
+  width: 180px;
+  background-color: #52c315;
+  font-family: montserrat-600;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.blueBrg {
+  position: relative;
+  background-image: url("../images/seconBrg.jpg");
+  height: 200px;
+  width: 100%;
+}
+
+.blueBrg::before {
+  content: "";
+  background-color: rgba(24, 133, 217, 0.95);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.centralizeCTF {
+  display: flex;
+  justify-content: center;
+}
+
+.blueBrgInfo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactInfo .ion-ios-telephone-outline,
+.contactInfo .ion-ios-alarm-outline,
+.contactInfo .ion-ios-email-outline {
+  color: #ffffff;
+  font-size: 72px;
+  float: left;
+  margin-right: 25px;
+  line-height: 200px;
+}
+
+.contactInfo p {
+  margin-bottom: 5px;
+  font-family: montserrat-bold;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.contactInfo span {
+  font-family: Lato-regular;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.sectionTitle span {
+  font-family: Lato-300;
+  font-size: 18px;
+  color: #36392e;
+  font-weight: normal;
+}
+
+.sectionTitle p {
+  font-family: montserrat-bold;
+  font-size: 24px;
+  color: #36392e;
+  font-weight: normal;
+}
+
+.ImgOfservice {
+  height: 200px;
+}
+
+.SVnoOne {
+  background-image: url("../images/SVno1.jpg");
+}
+
+.SVno2 {
+  background-image: url("../images/SVno2.jpg");
+}
+
+.SVno3 {
+  background-image: url("../images/SVno3.jpg");
+}
+
+.SVno4 {
+  background-image: url("../images/SVno4.jpg");
+}
+
+.SVtype {
+  margin: 30px 0px 25px 0px;
+  font-family: montserrat-bold;
+  font-size: 16px;
+  color: #36392e;
+  font-weight: normal;
+}
+
+.SVdecript {
+  font-family: Lato-regular;
+  font-size: 14px;
+  color: #999999;
+  font-weight: normal;
+}
+
+.getSchedule {
+  margin: 45px 0px 60px 0px;
+  text-align: center;
+  font-family: montserrat-bold;
+  font-size: 14px;
+  color: #999999;
+  font-weight: normal;
+}
+
+.getSchedule span {
+  padding: 10px 20px;
+  border: 3px solid #dcdcdc;
+  border-radius: 43px;
+}
+
+.featureprojectTit span, .featureprojectTit p {
+  color: #ffffff;
+}
+
+.featureproject {
+  background-image: url("../images/FeatureBrg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 760px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.featureproject::before {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1010px solid transparent;
+  border-right: 1010px solid transparent;
+  border-top: 50px solid #ffffff;
+}
+
+.featureproject::after {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1010px solid transparent;
+  border-right: 1010px solid transparent;
+  border-bottom: 50px solid #ffffff;
+}
+
+.featureproject .tagProject {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.featureproject .tagProject span {
+  height: 30px;
+  line-height: 27px;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-right: 20px;
+  display: inline-block;
+  font-family: montserrat-regular;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.featureproject .tagProject span:hover {
+  padding: 0px 15px;
+  border: 2px solid #5d636a;
+}
+
+.featureproject .ProjectImg {
+  display: flex;
+}
+
+.featureproject .ProjectImg::before {
+  font-size: 30px;
+  content: "\f133";
+  font-family: "Ionicons";
 }
 
 /*# sourceMappingURL=style.css.map */
