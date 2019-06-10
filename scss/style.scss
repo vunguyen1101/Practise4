@@ -2,7 +2,7 @@
 @import 'mixin';
 $main-dark:#36392e;
 $buton-color:#999999;
-$button-boder-clr:#5d636a;
+$button-boder-clr:#dcdcdc;
 ////////////////////////header=====================================
 header{
     z-index: 2;
@@ -168,6 +168,7 @@ header{
         @include fontface($Lato-light,18px,#36392e,normal); 
     }
     p{
+        margin-bottom: 40px;
         @include fontface($montserrat-bold,24px,#36392e,normal); 
     }
 }
@@ -199,7 +200,7 @@ header{
     @include fontface($montserrat-bold,14px,#999999,normal); 
     span{
         padding: 10px 20px;
-        border:3px solid #dcdcdc;
+        border:3px solid $button-boder-clr;
         border-radius: 43px;
     }
 }
@@ -232,7 +233,7 @@ header{
     }
     &::after{  
         position: absolute;
-        bottom: -25px;
+        bottom: -26px;
         left: 50%;
         transform: translate(-50%, -50%);
         content: "";
@@ -262,11 +263,176 @@ header{
     }
     .ProjectImg{
         display: flex;
-        &::before{
-            font-size: 30px;
-            content: "\f133";
-            font-family: "Ionicons";
+
+    }
+
+}
+/////////////////////////Conment/////////////////////////
+.qouteCover{
+    margin-top: 50px;
+    text-align: center;
+}
+.ion-quote{
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 59px;
+    border: 3px solid $button-boder-clr;
+}
+.Comment{
+    margin-top: 20px;
+}
+.qouteDescript{
+    margin: 40px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    @include fontface($Lato-reg,18px,$buton-color,normal);
+}
+.AccountCmt{
+    display: inline-block;
+    img{
+        float: left;
+    }
+    .AcountInfo{
+        margin: 15px 15px 30px 15px;
+        float: left;
+        .Cmtname{
+            @include fontface($montserrat-bold,16px,$main-dark,normal);
+        }
+        .CmtAdd{
+            text-align: left;
+            @include fontface($montserrat-regular,14px,$buton-color,normal);
         }
     }
 
+}
+.Onmedia{
+    margin-bottom: 100px;
+    height: 117px;
+    border-top: 1px solid $button-boder-clr;
+    border-bottom: 1px solid $button-boder-clr;
+    .mediatool{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+}
+////////////////////////////////// cleaningteamBrg
+.cleaningTeamBrg{
+    position: relative;
+    background-image: url('../images/CleanTeamBrg.jpg');
+    height: 450px;
+    background-size: cover;
+    &::before{
+        content: "";
+        background-color: rgba(24, 133, 217, 0.8);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    img{
+        position: absolute;
+        top: -86px;
+        left: 70px;
+    }
+}
+
+.advertise{
+    @include CenterlizeBlock(450px);
+}
+.need{
+    line-height: 30px;
+    @include fontface($MyriadPro-reg,30px,#ffffff,normal);
+}
+.forUhome{
+    line-height: 34px;
+    @include fontface($MyriadPro-reg,34px,#ffffff,900);
+}
+.heretobe{
+    margin: 10px 0px;
+    @include fontface($MyriadPro-reg,18px,#ffffff,300);
+}
+.telephone{
+    @include fontface($Lato-reg,42px,#ffffff,bold);
+}
+
+///tag Expert
+.OuteamBrg{
+    padding-top:100px;
+    background-image: url('../images/OurTeamBrg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 960px;
+    position: relative;
+}
+.ourTeam{
+    margin-top:0;
+}
+.ExpertTag{
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    position: relative;  
+    &:hover{
+        .ExpertTagHover{
+            display: block;
+        }
+    }
+}
+.ExpertTagHover{
+    display: none;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    background-color: rgba($color: #212121, $alpha: 0.3);
+    span{
+        padding: 0px 12px;
+        font-size: 40px;
+        background-color: rgba($color: #212121, $alpha: 0.3);
+        color: #ffffff;
+        border-radius: 51px;
+    }
+}
+.NameExpert{
+    margin-top:20px;
+    text-align: center;
+    @include fontface($montserrat-bold,16px,$main-dark,normal);
+}
+.CExpert{
+    text-align: center;
+    @include fontface($Lato-reg,14px,$buton-color,normal);
+}
+.socialNet{
+    display: flex;
+    justify-content: center;
+    span{
+        margin-right: 10px;
+        color: $main-dark;
+        cursor: pointer;
+    }
+}
+.TeamHR{
+    border: 1px solid #238ee1;
+    width: 30px;
+}
+.AmmountBrg{
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+    height: 250px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.webAmount{
+    text-align: center;
+    @include CenterlizeBlock(250px);
+    span{
+        @include fontface($montserrat-bold,32px,$main-dark,normal);
+    }
+    p{
+        @include fontface($montserrat-regular,14px,$main-dark,normal);
+    }
 }

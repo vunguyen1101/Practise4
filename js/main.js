@@ -13,3 +13,17 @@ $(document).ready(function(){
       return false;
     });
   });
+
+
+  // carousel COmment
+
+  $(document).ready(function(){
+    $('.CommentCaousel').slick({
+      dots: true,
+    });
+  });
+
+
+  // ExpertTag Carousel
+  
+  

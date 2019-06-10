@@ -14,3 +14,9 @@
     -webkit-border-radius: $width;
     border-radius:$width;
 }
+@mixin CenterlizeBlock($height) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: $height;
+}
