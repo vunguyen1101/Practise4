@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -17,7 +18,27 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo"><span>alice</span>maid</div>        
+            <div class="logo"><span>alice</span>maid</div>    
+            <div class="hamburger">
+                <span class="slice"></span>
+                <span class="slice"></span>
+                <span class="slice"></span>
+            </div>    
+            <nav class="MoblieNav">
+                <div class="bagContainer">
+                    <div class="ion-bag"></div>
+                    <div class="SearchDesk ion-ios-search"></div>
+                    <input type="text" placeholder="Your search here...">
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">PORTFO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </nav>
             <nav class="DeskTopNav">
                 <ul>
                     <li><a href="#">HOME</a></li>
@@ -27,10 +48,13 @@
                     <li><a href="#">PORTFO</a></li>
                     <li><a href="#">BLOG</a></li>
                 </ul>
-                <div class="headerDot">.</div>
-                <div class="ion-bag"></div>
-                <div class="SearchDesk ion-ios-search"></div>
-            </nav>        
+                <div class="bagContainer">
+                    <div class="headerDot">.</div>
+                    <div class="Deskbag ion-bag"></div>
+                    <div class="SearchDesk ion-ios-search"></div>
+                    <input type="text" placeholder="Your search here...">
+                </div>
+            </nav>   
         </div>
     </header>
     <!------------------------------------------HERO -------------------------------------->
@@ -52,7 +76,7 @@
         <div class="blueBrg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 centralizeCTF">
+                    <div class="col-lg-4 col-md-4 centralizeCTF">
                         <div class="contactInfo">
                             <div class="ion-ios-telephone-outline"></div>
                             <div class="blueBrgInfo">
@@ -61,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 centralizeCTF">
+                    <div class="col-lg-4 col-md-4 centralizeCTF">
                         <div class="contactInfo">
                             <div class="ion-ios-alarm-outline"></div>
                             <div class="blueBrgInfo">
@@ -70,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 centralizeCTF">
+                    <div class="col-lg-4 col-md-4 centralizeCTF">
                         <div class="contactInfo">
                             <div class="ion-ios-email-outline"></div>
                             <div class="blueBrgInfo">
@@ -91,28 +115,28 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="ImgOfservice SVnoOne"></div>
                     <div class="SVtype">Carpet Cleaning</div>
                     <div class="SVdecript">
                         Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="ImgOfservice SVno2"></div>
                     <div class="SVtype">Move in/out Cleaning</div>
                     <div class="SVdecript">
                         Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="ImgOfservice SVno3"></div>
                     <div class="SVtype">House Cleaning</div>
                     <div class="SVdecript">
                         Vivamus consequat, felis at aliquam elementum, massa sem dignis Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere numquam quos aliquid doloremque vel beatae
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-sm-6">
                     <div class="ImgOfservice SVno4"></div>
                     <div class="SVtype">Construction Cleaning</div>
                     <div class="SVdecript">
@@ -199,17 +223,16 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         
         <div class="container">
             <div class="Onmedia">
                 <div class="row">
-                    <div class="col-lg-3 mediatool"><img src="images/onmedia1_03.jpg" alt="onmedia"></div>
-                    <div class="col-lg-3 mediatool"><img src="images/onmedia2_03_03.jpg" alt="onmedi2"></div>
-                    <div class="col-lg-3 mediatool"><img src="images/onmedia3_03.jpg" alt="onmedi3"></div>
-                    <div class="col-lg-3 mediatool"><img src="images/onmedia4_03.jpg" alt="onmedi4"></div>
+                    <div class="col-lg-3 col-sm-6 mediatool"><img src="images/onmedia1_03.jpg" alt="onmedia"></div>
+                    <div class="col-lg-3 col-sm-6 mediatool"><img src="images/onmedia2_03_03.jpg" alt="onmedi2"></div>
+                    <div class="col-lg-3 col-sm-6 mediatool"><img src="images/onmedia3_03.jpg" alt="onmedi3"></div>
+                    <div class="col-lg-3 col-sm-6 mediatool"><img src="images/onmedia4_03.jpg" alt="onmedi4"></div>
                 </div>
             </div>
         </div>
@@ -220,8 +243,8 @@
         <div class="cleaningTeamBrg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6"><img src="images/coupleClean.png" alt="coupleClean"></div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-6"><img class="advertiseImg" src="images/coupleClean.png" alt="coupleClean"></div>
+                    <div class="col-lg-6 col-sm-6">
                         <div class="advertise">
                             <div class="need">
                                 NEED A CLEANING TEAM
@@ -247,7 +270,7 @@
             </div>
             <div class="container">
                 <div class="row CarouselStaff">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="ExpertTag">
                             <img src="images/expert-Staff1_03.png" alt="Staff1_03">
                             <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
@@ -264,7 +287,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="ExpertTag">
                             <img src="images/expert-Staff2_03.png" alt="Staff1_03">
                             <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
@@ -281,7 +304,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-6" >
                         <div class="ExpertTag">
                             <img src="images/expert-Staff3_03.png" alt="Staff1_03">
                             <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
@@ -298,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-sm-6">
                         <div class="ExpertTag">
                             <img src="images/expert-Staff4_03.png" alt="Staff1_03">
                             <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
@@ -315,30 +338,50 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="ExpertTag">
+                            <img src="images/expert-Staff2_03.png" alt="Staff1_03">
+                            <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
+                            <div class="NameExpert">Jennifer Palmer</div>
+                            <div class="CExpert">
+                                Cleaning Expert
+                            </div>
+                            <hr class="TeamHR">
+                            <div class="socialNet">
+                                <span class="ion-social-facebook"></span>
+                                <span class="ion-social-twitter"></span>
+                                <span class="ion-social-googleplus"></span>
+                                <span class="ion-social-linkedin"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="getSchedule VIewallstaff">
+                    <span>VIEW ALL STAFF</span> 
                 </div>
             </div>
             <div class="AmmountBrg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6 col-6 ">
                             <div class="webAmount">
                                 <span>102</span>
                                 <p>Product Design</p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6 col-6">
                             <div class="webAmount">
                                 <span>58</span>
                                 <p>Happy Customers</p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6 col-6">
                             <div class="webAmount">
                                 <span>23</span>
                                 <p>Award Winning</p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6 col-6">
                             <div class="webAmount">
                                 <span>74</span>
                                 <p>Coffee Cups</p>
@@ -349,6 +392,152 @@
             </div>
         </div>
     </section>
+<!-- --------------------------------------------------OUR BLOCK -------------------------------->
+    <section>
+        <div class="sectionTitle ourblog">
+            <span>FROM OUR BLOG</span>
+            <p>KEEP UP TO DATE WITH US</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="ExpertTag ">
+                        <i class="ion-android-bookmark"></i>
+                        <i class="ion-paperclip"></i>
+                        <img src="images/OurTeamThumb1_03.jpg" alt="ourteamthum1">
+                        <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
+                        <div class="NameExpert OURBlogTagName">Ultricies euismod lorem vitae condimentum</div>
+                        <div class="OurtemThuminfo">
+                            <span><i class="ion-android-person"></i> John Doe</span>
+                            <span><i class="ion-calendar"></i> June 8, 2015</span>
+                        </div>
+                        <div class="BlogDecript">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium ab nemo, cupiditate odit quaerat voluptate similique sequi qui nihil.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="ExpertTag ">
+                        <img src="images/OurTeamThumb2_03.jpg" alt="ourteamthum1">
+                        <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
+                        <div class="NameExpert OURBlogTagName">Ultricies euismod lorem vitae condimentum</div>
+                        <div class="OurtemThuminfo">
+                            <span><i class="ion-android-person"></i> John Doe</span>
+                            <span><i class="ion-calendar"></i> June 8, 2015</span>
+                        </div>
+                        <div class="BlogDecript">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium ab nemo, cupiditate odit quaerat voluptate similique sequi qui nihil.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ExpertTag ">
+                        <img src="images/OurTeamThumb3_03.jpg" alt="ourteamthum1">
+                        <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
+                        <div class="NameExpert OURBlogTagName">Ultricies euismod lorem vitae condimentum</div>
+                        <div class="OurtemThuminfo">
+                            <span><i class="ion-android-person"></i> John Doe</span>
+                            <span><i class="ion-calendar"></i> June 8, 2015</span>
+                        </div>
+                        <div class="BlogDecript">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium ab nemo, cupiditate odit quaerat voluptate similique sequi qui nihil.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="ExpertTag ">
+                        <img src="images/OurTeamThumb4_03.jpg" alt="ourteamthum1">
+                        <div class="ExpertTagHover"><span class="ion-ios-eye"></span></div>
+                        <div class="NameExpert OURBlogTagName">Ultricies euismod lorem vitae condimentum</div>
+                        <div class="OurtemThuminfo">
+                            <span><i class="ion-android-person"></i> John Doe</span>
+                            <span><i class="ion-calendar"></i> June 8, 2015</span>
+                        </div>
+                        <div class="BlogDecript">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus praesentium ab nemo, cupiditate odit quaerat voluptate similique sequi qui nihil.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ViewallPost">
+                <span>VIEW ALL POSTS</span> 
+            </div>
+        </div>
+        <div class="Devices">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6"><img class="iphone" src="images/DevicesApp.png" alt="device"></div>
+                    <div class="col-lg-7 col-sm-6">
+                        <p class="getapp4free">
+                            GET ALICEMAID APP FOR FREE
+                        </p>
+                        <p class="installaccess">INSTANT ACCESS TO ONLINE ESTIMATE PRICE</p>
+                        <div class=" col-sm-6">
+                            <span><img src="images/appstore_03.png" alt="appstore"></span>
+                            <span><img src="images/GooglePlay_03.png" alt="googleplay"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="logo"><span>alice</span>maid</div>
+                    <div class="minimap"><img src="images/minimap.png" alt="minimap"></div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footerDecr">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque placeat explicabo ex inventore soluta.<br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis consectetur et adipisci esse voluptatibus accusantium omnis, beatae dolor magni porro.
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="Location">
+                        <p>LOCATION</p>
+                        <ul>
+                            <li>—  Melbourne Office</li>
+                            <li>—  Geelong Office</li>
+                            <li>—  Warrnambool Office</li>
+                            <li>—  Melbourne Office</li>
+                            <li>—  Waragul Office</li>
+                            <li>—  Warrnambool Office</li>
+                            <li>—  Waragul Office</li>
+                            <li>—  Castlemaine Office</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="Location">
+                        <p>USEFUL LINKS</p>
+                        <ul>
+                            <li>—  Who is AliceMaid?</li>
+                            <li>—  How to get free online estimate?</li>
+                            <li>—  Warrnambool Office</li>
+                            <li>—  Helper Center</li>
+                            <li>—  Terms og Service</li>
+                            <li>—  Warrnambool Office</li>
+                            <li>—  Privacy Policy</li>
+                            <li>—  Money-back Guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div>
+            <div class="media">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="ion-social-googleplus-outline"></i>
+                <i class="fa fa-pinterest-p"></i>
+            </div><br>
+            <span>2015 AliceMaid. Designed with <i class="fa fa-heart-o"></i> by haintheme</span>
+        </div>
+    </div>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
