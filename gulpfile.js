@@ -51,6 +51,7 @@ gulp.task( 'clean', del.bind( null, ['build'] ) );
 gulp.task( 'watch', ['browser-sync'], () => {
    gulp.watch( 'scss/**/*.scss', ['sass'] );
    gulp.watch( 'scss/*.scss', ['sass'] );
+   gulp.watch("pages/*.html").on('change', browserSync.reload);
    gulp.watch("./*.html").on('change', browserSync.reload);
    gulp.watch("./js/**/*.js").on('change', browserSync.reload);
 

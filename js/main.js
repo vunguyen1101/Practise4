@@ -1,6 +1,5 @@
 $(document).ready(function(){
     var content=$(".ProjectImg"),tabs=$("span");
-    
     tabs.on('click', function(){
   
       tabs.removeClass('active').filter(this).addClass('active');
@@ -80,3 +79,69 @@ $(document).ready(function(){
     ]
   });
   
+//scroll to section
+$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($(this).attr("href")).offset().top;
+
+	$("body, html").animate({
+		scrollTop: position
+	},1500);
+});
+
+
+// blog/ quanity
+
+$('#add').click(function () {
+  if ($('#bedroom').val() < 100) {
+    $('#bedroom').val(+$('#bedroom').val() + 1);
+  }
+});
+$('#sub').click(function () {
+  if ($('#bedroom').val() > 0) {
+    if ($('#bedroom').val() > 0) $('#bedroom').val(+$('#bedroom').val() - 1);
+  }
+});
+
+
+$('#add2').click(function () {
+  if ($('#bathroom').val() < 100) {
+    $('#bathroom').val(+$('#bathroom').val() + 1);
+  }
+});
+$('#sub2').click(function () {
+  if ($('#bathroom').val() > 0) {
+    if ($('#bathroom').val() > 0) $('#bathroom').val(+$('#bathroom').val() - 1);
+  }
+});
+
+// ============timepickerr
+$('#timepicker').timepicker({
+  uiLibrary: 'bootstrap4'
+});
+
+// categoties click
+jQuery(document).ready(function($){
+
+  $('.catelist').on('click',function(){
+  
+  if($(this).attr('data-click-state') == 1) {
+  $(this).attr('data-click-state', 0)
+  $(this).css({'text-decoration': 'none','color':'#999999'})
+  } else {
+  $(this).attr('data-click-state', 1)
+  $(this).css({'text-decoration': 'line-through','color':'#238ee1'})
+  }
+  
+  });
+  
+  });
+
+
+  // $(document).ready(function(){
+  //   $("header").mouseover(function(){
+  //     $("header").css("visibility", "visible");
+  //   });
+
+  // });
