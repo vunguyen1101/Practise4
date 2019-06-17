@@ -69,6 +69,8 @@ header{
     float: right;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
+    border: none;
+    background-color: transparent;
     span{
         display: block;
         position: absolute;
@@ -541,17 +543,18 @@ header{
 .ourTeam{
     margin-top:0;
 }
+
 .ExpertTag{
+    position: relative;
     img{
         width: 100%;
     }
     background-color: #ffffff;
     padding-bottom: 30px;
-    border-radius: 5px;
-    position: relative;  
+    border-radius: 5px;  
     &:hover{
         .ExpertTagHover{
-            display: block;
+            display: flex;
         }
     }
     .ion-android-bookmark{
@@ -569,22 +572,31 @@ header{
         top: -7px;
     }
 }
+.ImgExpertHover{
+    position: relative;
+}
 .ExpertTagHover{
     display: none;
-    line-height: 200px;
-    text-align: center;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 5px 5px 0px 0px;
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 100%;
     top: 0;
     background-color: rgba($color: #212121, $alpha: 0.3);
     span{
-        padding: 0px 12px;
+        height: 60px;
+        width: 60px;;
+        padding: 0px 12px 0px 15px;
         font-size: 40px;
         background-color: rgba($color: #212121, $alpha: 0.3);
         color: #ffffff;
         border-radius: 51px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
     }
 }
 .NameExpert{

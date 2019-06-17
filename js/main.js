@@ -26,7 +26,7 @@ $(document).ready(function(){
 /////event for hamburger
 
 $(document).ready(function(){
-	$('.hamburger,slice').click(function(){
+	$('.hamburger').click(function(){
 		$(this).toggleClass('open');
 	});
 });
@@ -35,6 +35,7 @@ $(document).ready(function(){
 		$('.MoblieNav').slideToggle(300);
 	});
 });
+
 //////serarch button
 $(document).ready(function(){
 	$('.SearchDesk').click(function(){
