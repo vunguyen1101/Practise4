@@ -82,12 +82,12 @@ header{
     span{
         display: block;
         position: absolute;
-        height: 9px;
+        height: 8px;
         width: 100%;
         background:$main-blue;
         border-radius: 9px;
         @media (max-width: 700px) {
-            height: 5px;
+            height: 6px;
         }
         opacity: 1;
         left: 0;

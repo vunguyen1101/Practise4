@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var content=$(".ProjectImg"),tabs=$("span");
+    var content=$(".ProjectImg"),tabs=$(".tagProject span");
     tabs.on('click', function(){
   
       tabs.removeClass('active').filter(this).addClass('active');
@@ -26,7 +26,7 @@ $(document).ready(function(){
 /////event for hamburger
 
 $(document).ready(function(){
-	$('.slice,.hamburger').click(function(){
+	$('.slice').click(function(){
     $('.MoblieNav').slideToggle(300);
     $('.hamburger').toggleClass('open');
 	});
