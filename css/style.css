@@ -624,6 +624,10 @@ header {
   }
 }
 
+.featureproject .ProjectImg .ImgExpertHover:hover .ExpertTagHover {
+  display: flex;
+}
+
 .qouteCover {
   margin-top: 50px;
   text-align: center;
