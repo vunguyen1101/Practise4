@@ -162,7 +162,7 @@ header {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .hamburger {
     width: 40px;
   }
@@ -187,7 +187,7 @@ header {
   transition: .25s ease-in-out;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .hamburger span {
     height: 5px;
   }
@@ -201,7 +201,7 @@ header {
   transform-origin: left center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .hamburger span:nth-child(1) {
     top: 8px;
   }
@@ -223,7 +223,7 @@ header {
   transform-origin: left center;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .hamburger span:nth-child(3) {
     top: 28px;
   }
@@ -238,7 +238,7 @@ header {
   left: 8px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .hamburger.open span:nth-child(1) {
     top: 11px;
   }
