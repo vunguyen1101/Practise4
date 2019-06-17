@@ -90,6 +90,11 @@ header {
   font-weight: normal;
 }
 
+.logo #homeindex {
+  color: #238ee1;
+  text-decoration: none;
+}
+
 .logo span {
   color: #46607f;
 }
