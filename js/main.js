@@ -26,7 +26,7 @@ $(document).ready(function(){
 /////event for hamburger
 
 $(document).ready(function(){
-	$('.slice').click(function(){
+	$('.hamburger').click(function(){
     $('.MoblieNav').slideToggle(300);
     $('.hamburger').toggleClass('open');
 	});
