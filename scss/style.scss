@@ -722,6 +722,12 @@ header{
     @media  (max-width: 575px) {
         height: 200%;
     }
+    span{
+        img{
+             margin-right: 30px;
+             margin-bottom: 10px;
+        }
+    }
     background-image: url('../images/AppBrg.jpg');
     background-position: center;
     background-size: cover;
