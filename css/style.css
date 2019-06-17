@@ -99,7 +99,7 @@ header {
   color: #46607f;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .logo {
     line-height: 114px;
   }
@@ -124,7 +124,7 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .DeskTopNav {
     display: none;
   }
@@ -161,7 +161,7 @@ header {
   background-color: transparent;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .hamburger {
     display: none;
   }
@@ -491,7 +491,7 @@ header {
 
 @media (max-width: 767px) {
   .blueBrg {
-    height: 600px;
+    height: 300px;
   }
 }
 
@@ -507,6 +507,12 @@ header {
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .contactInfo {
+    height: 100px;
+  }
+}
+
 .contactInfo .ion-ios-telephone-outline,
 .contactInfo .ion-ios-alarm-outline,
 .contactInfo .ion-ios-email-outline {
@@ -515,6 +521,14 @@ header {
   float: left;
   margin-right: 25px;
   line-height: 200px;
+}
+
+@media (max-width: 767px) {
+  .contactInfo .ion-ios-telephone-outline,
+  .contactInfo .ion-ios-alarm-outline,
+  .contactInfo .ion-ios-email-outline {
+    line-height: 100px;
+  }
 }
 
 .contactInfo p {

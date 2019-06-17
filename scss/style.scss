@@ -25,7 +25,7 @@ header{
     span{
         color: #46607f;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         line-height: 114px;
     }
     float: left;
@@ -45,7 +45,7 @@ header{
             width: 80%;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         display: none;
     }
     ul{
@@ -62,7 +62,7 @@ header{
     }
 }
 .hamburger{
-    @media (min-width: 767px) {
+    @media (min-width: 992px) {
         display: none;
     }
     cursor: pointer;
@@ -323,7 +323,7 @@ header{
     height: 200px;
     width: 100%;
     @media (max-width: 767px) {
-        height: 600px;
+        height: 300px;
     }
 }
 .centralizeCTF{
@@ -337,6 +337,9 @@ header{
     justify-content: center;
 }
 .contactInfo{
+    @media (max-width: 767px) {
+        height: 100px;
+    }
     .ion-ios-telephone-outline,
     .ion-ios-alarm-outline,
     .ion-ios-email-outline
@@ -346,6 +349,9 @@ header{
         float: left;
         margin-right: 25px;
         line-height: 200px;
+        @media (max-width: 767px) {
+            line-height: 100px;
+        }
     }
     p{
         margin-bottom: 5px;
