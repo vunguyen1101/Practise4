@@ -162,6 +162,12 @@ header {
   }
 }
 
+@media (max-width: 500px) {
+  .hamburger {
+    width: 40px;
+  }
+}
+
 .hamburger span {
   display: block;
   position: absolute;
@@ -181,12 +187,24 @@ header {
   transition: .25s ease-in-out;
 }
 
+@media (max-width: 500px) {
+  .hamburger span {
+    height: 5px;
+  }
+}
+
 .hamburger span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
+}
+
+@media (max-width: 500px) {
+  .hamburger span:nth-child(1) {
+    top: 8px;
+  }
 }
 
 .hamburger span:nth-child(2) {
@@ -205,6 +223,12 @@ header {
   transform-origin: left center;
 }
 
+@media (max-width: 500px) {
+  .hamburger span:nth-child(3) {
+    top: 28px;
+  }
+}
+
 .hamburger.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -212,6 +236,12 @@ header {
   transform: rotate(45deg);
   top: -3px;
   left: 8px;
+}
+
+@media (max-width: 500px) {
+  .hamburger.open span:nth-child(1) {
+    top: 11px;
+  }
 }
 
 .hamburger.open span:nth-child(2) {
@@ -619,8 +649,11 @@ header {
 }
 
 @media (max-width: 767px) {
-  .featureproject .ProjectImg img {
+  .featureproject .ProjectImg .ImgExpertHover {
     width: 50%;
+  }
+  .featureproject .ProjectImg .ImgExpertHover img {
+    width: 100%;
   }
 }
 
@@ -805,6 +838,12 @@ header {
   }
 }
 
+@media (min-width: 420px) and (max-width: 479px) {
+  .OuteamBrg {
+    height: 1270px;
+  }
+}
+
 .ourTeam {
   margin-top: 0;
 }
@@ -904,18 +943,22 @@ header {
 }
 
 .VIewallstaff {
-  margin: 60px 10px 50px 10px;
+  position: absolute;
+  top: 580px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (max-width: 454px) {
+@media (min-width: 420px) and (max-width: 479px) {
   .VIewallstaff {
-    margin: 40px 10px 50px 10px;
+    top: 670px;
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 419px) {
   .VIewallstaff {
-    margin: 20px;
+    width: 100%;
+    top: 630px;
   }
 }
 
@@ -930,7 +973,7 @@ header {
   border: 3px solid #dcdcdc;
   display: block;
   position: absolute;
-  top: 403px;
+  top: 606px;
 }
 
 .slick-arrow:hover {
@@ -939,89 +982,107 @@ header {
   border: 3px solid #52c315;
 }
 
-@media (min-width: 999px) and (max-width: 1199px) {
-  .slick-arrow {
-    top: 360px;
-  }
-}
-
-@media (max-width: 991px) {
-  .slick-arrow {
-    top: 360px;
-  }
-}
-
-@media (max-width: 767px) {
-  .slick-arrow {
-    top: 338px;
-  }
-}
-
-@media (max-width: 741px) {
-  .slick-arrow {
-    top: 382px;
-  }
-}
-
-@media (max-width: 454px) {
-  .slick-arrow {
-    top: 400px;
-  }
-}
-
-@media (max-width: 415px) {
-  .slick-arrow {
-    top: 450px;
-  }
-}
-
-@media (max-width: 375px) {
-  .slick-arrow {
-    top: 420px;
-  }
-}
-
 .ion-arrow-right-c {
-  left: 60%;
+  left: 57%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1600px) {
+  .ion-arrow-right-c {
+    left: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ion-arrow-right-c {
+    left: 62%;
+  }
+}
+
+@media (max-width: 875px) {
   .ion-arrow-right-c {
     left: 65%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 710px) {
   .ion-arrow-right-c {
-    left: 70%;
+    left: 72%;
   }
 }
 
-@media (max-width: 454px) {
+@media (max-width: 479px) {
   .ion-arrow-right-c {
     left: 80%;
   }
 }
 
-.ion-arrow-left-c {
-  right: 60%;
+@media (min-width: 420px) and (max-width: 479px) {
+  .ion-arrow-right-c {
+    top: 695px;
+  }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 419px) {
+  .ion-arrow-right-c {
+    top: 655px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ion-arrow-right-c {
+    left: 85%;
+  }
+}
+
+.ion-arrow-left-c {
+  right: 57%;
+}
+
+@media (max-width: 1600px) {
+  .ion-arrow-left-c {
+    right: 60%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ion-arrow-left-c {
+    right: 62%;
+  }
+}
+
+@media (max-width: 875px) {
   .ion-arrow-left-c {
     right: 65%;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 710px) {
   .ion-arrow-left-c {
-    right: 70%;
+    right: 72%;
   }
 }
 
-@media (max-width: 454px) {
+@media (max-width: 479px) {
   .ion-arrow-left-c {
     right: 80%;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 479px) {
+  .ion-arrow-left-c {
+    top: 695px;
+  }
+}
+
+@media (max-width: 419px) {
+  .ion-arrow-left-c {
+    top: 655px;
+  }
+}
+
+@media (max-width: 360px) {
+  .ion-arrow-left-c {
+    right: 85%;
   }
 }
 

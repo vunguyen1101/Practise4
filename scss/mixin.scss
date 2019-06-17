@@ -31,15 +31,30 @@
     }
 }
 @mixin ReponsiveCaroulBut($pop) {
-    #{$pop}: 60%;
-    @media  (max-width: 991px) {
+    #{$pop}: 57%;
+    @media  (max-width: 1600px) {
+        #{$pop}: 60%;
+    }
+    @media  (max-width: 1024px) {
+        #{$pop}: 62%;
+    }
+    @media  (max-width: 875px) {
         #{$pop}: 65%;
     }
-    @media  (max-width: 767px) {
-        #{$pop}: 70%;
+    @media  (max-width: 710px) {
+        #{$pop}: 72%;
     }
-    @media  (max-width: 454px) {
+    @media  (max-width: 479px) {
         #{$pop}: 80%;
+    }
+    @media (min-width: 420px)and(max-width: 479px) {
+        top: 695px;
+    }
+    @media  (max-width: 419px) {
+        top: 655px;
+    }
+    @media  (max-width: 360px) {
+        #{$pop}:85% ;
     }
     
 }
