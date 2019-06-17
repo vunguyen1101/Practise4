@@ -419,11 +419,10 @@ header{
             line-height: 27px;
             cursor: pointer;
             border-radius: 30px;
-            &:hover{
-                padding: 0px 15px;
+            padding: 0px 15px;
+            &:hover{      
                 border: 2px solid #5d636a;
-            }
-            margin-right:20px;
+            }     
             display: inline-block;
             @include fontface($montserrat-regular,12px,#ffffff,normal);
         }
@@ -658,6 +657,9 @@ header{
     transform: translate(-50%, -50%); 
     @media (min-width: 420px)and(max-width: 479px) {
         top: 670px;
+    }
+    @media  (max-width: 437px) {
+        width: 100%;
     }
     @media  (max-width: 419px) {
         width: 100%;

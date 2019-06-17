@@ -635,7 +635,7 @@ header {
   line-height: 27px;
   cursor: pointer;
   border-radius: 30px;
-  margin-right: 20px;
+  padding: 0px 15px;
   display: inline-block;
   font-family: montserrat-regular;
   font-size: 12px;
@@ -644,7 +644,6 @@ header {
 }
 
 .featureproject .tagProject span:hover {
-  padding: 0px 15px;
   border: 2px solid #5d636a;
 }
 
@@ -957,6 +956,12 @@ header {
 @media (min-width: 420px) and (max-width: 479px) {
   .VIewallstaff {
     top: 670px;
+  }
+}
+
+@media (max-width: 437px) {
+  .VIewallstaff {
+    width: 100%;
   }
 }
 
