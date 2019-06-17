@@ -288,12 +288,31 @@ header {
   font-weight: normal;
 }
 
-.bagContainer {
+.MobilebagContainer {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.MobilebagContainer input {
+  position: absolute !important;
+  top: 0px !important;
+  left: 56% !important;
+}
+
+@media (max-width: 412px) {
+  .MobilebagContainer input {
+    margin-left: 20px !important;
+    position: unset !important;
+  }
+}
+
+.bagContainer, .MobilebagContainer {
   display: flex;
   flex-direction: row;
 }
 
-.bagContainer input {
+.bagContainer input, .MobilebagContainer input {
   display: none;
   height: 30px;
   border: none;
@@ -308,16 +327,16 @@ header {
 }
 
 @media (min-width: 992px) {
-  .bagContainer {
+  .bagContainer, .MobilebagContainer {
     flex-flow: wrap;
   }
 }
 
 @media (max-width: 767px) {
-  .bagContainer {
+  .bagContainer, .MobilebagContainer {
     justify-content: center;
   }
-  .bagContainer input {
+  .bagContainer input, .MobilebagContainer input {
     margin-left: 20px;
     position: unset;
   }

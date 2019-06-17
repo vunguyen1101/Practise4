@@ -35,7 +35,8 @@ $(document).ready(function(){
 //////serarch button
 $(document).ready(function(){
 	$('.SearchDesk').click(function(){
-		$('.bagContainer input').slideToggle(300);
+    $('.bagContainer input').slideToggle(300);
+    $('.MobilebagContainer input').slideToggle(300);
 	});
 });
 
