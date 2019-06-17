@@ -26,13 +26,9 @@ $(document).ready(function(){
 /////event for hamburger
 
 $(document).ready(function(){
-	$('.hamburger').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-$(document).ready(function(){
-	$('.hamburger').click(function(){
-		$('.MoblieNav').slideToggle(300);
+	$('.slice,.hamburger').click(function(){
+    $('.MoblieNav').slideToggle(300);
+    $('.hamburger').toggleClass('open');
 	});
 });
 
@@ -74,9 +70,7 @@ $(document).ready(function(){
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+
     ]
   });
   
@@ -140,9 +134,3 @@ jQuery(document).ready(function($){
   });
 
 
-  // $(document).ready(function(){
-  //   $("header").mouseover(function(){
-  //     $("header").css("visibility", "visible");
-  //   });
-
-  // });
