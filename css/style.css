@@ -642,6 +642,12 @@ header {
   }
 }
 
+@media (max-width: 450px) {
+  .featureproject {
+    height: 850px;
+  }
+}
+
 .featureproject .tagProject {
   margin-bottom: 50px;
   text-transform: uppercase;
